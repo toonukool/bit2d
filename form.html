@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <style>
+        button {
+            background-color: green;
+
+        }
+
+        input[type="password"]{
+            background-color: #F17A7A;
+
+        }
+
+        input[type="date"]+ label{
+
+            color: #42E133;
+        }
+
+        input{
+
+            width:150px;
+            box-sizing: border-box;
+            border-width: 0;
+            border-bottom: 2px black solid;
+        }
+
+        label{
+
+            background-color: #DBC7E3;
+        }
+    </style>
+    <h1>About You</h1>
+    <form action="" id="question" method="post">
+
+        <!-- <label for="favcolor">What is your favourite color? </label><input type="text" name="favcolor" id="favcolor"> -->
+        <input type="text" name="name" id="name"><label for="name">Name</label><br>
+        <input type="email" name="email" id="email"><label for="email" multiple>Email</label><br>
+        <input type="website" name="website" id="website"></input><label for="website">Website</label><br>
+        <input type="number" name="number" id="number" min="30"><label for="number">Number</label><br>
+        <input type="date" name="birthday" id="birthday"><label for="birthday">Birthday</label><br>
+        <input type="submit" value="ok">
+    </form>
+
+    <fieldset>
+        <legend>What is that color you saw?</legend>
+        <form action="" id="questions" method="post" name="questions">
+            <input type="radio" name="favcolor" value="blue" id="blue"><label for="blue">blue</label>
+            <input type="radio" name="favcolor" value="red" id="red"><label for="red">red</label>
+            <input type="radio" name="favcolor" value="green" id="green" checked><label for="green">green</label>
+        </form>
+    </fieldset>
+    <fieldset>
+            <legend>What is that color you saw?</legend>
+            <form action="" id="questions" method="post" name="questions">
+                <label for="blue"><input type="checkbox" name="favcolor" value="blue" id="blue">blue</label><br>
+                <input type="checkbox" name="favcolor" value="red" id="red"><label for="red">red</label><br>
+                <input type="checkbox" name="favcolor" value="green" id="green" checked><label for="green">green</label><br>
+                
+            </form>
+    </fieldset>
+
+    <label for="pizza">What is your favourite pizza topping?</label>
+    <select name="pizza" id="pizza" size="4">
+        <optgroup label="1">
+            <option value="mushroom">mushroom</option>
+            <option value="onions">onions</option>
+        </optgroup>
+        <optgroup label="2"></optgroup>
+            <option value="pepperoni">pepperoni</option>
+            <option value="sausage">sausage</option>
+        </optgroup>
+    </select>
+    <input type="submit" value="submit">
+
+
+
+    <form action="">
+        <textarea name="poem" id="poem" cols="30" rows="10" placeholder="type here."></textarea>
+        <input type="color" id="color" name="color">
+        <label for="password"></label><input type="password" name="password" id="password" required>
+        <button type="submit">sub<strong>m</strong>it</button>
+        <input type="reset" value="reset"></form>
+    </form>
+</html>
