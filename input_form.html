@@ -18,14 +18,28 @@
 
         }
 
-         input{
+         #styled input{
              border: 2px solid rebeccapurple;
              margin: 20px;
              cursor: pointer;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
+
+            
         }
+
+        #styled input[type="reset"]:focus {
+
+            border: 3px dashed red;
+
+        }
+
+        #styled input[type="submit"]:hover {
+
+border: 3px dashed rgb(22, 192, 76);
+
+}
 
     </style>
     
@@ -34,10 +48,12 @@
     <input type="reset" value="Reset">
     <input type="button" value="Take Action">
     <br>
+    <br>
     Styled: <br>
-    <input type="submit" value="Submit"  id="styled" />
-    <input type="reset" value="Reset" id="styled" />
-    <input type="button" value="Take Action"  id="styled" />
-    
+    <div id="styled">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+        <input type="button" value="Take Action" />
+    </div>
 </body>
 </html>
